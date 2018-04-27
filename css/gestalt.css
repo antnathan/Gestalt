@@ -30,7 +30,7 @@ p {
 	margin-left:15%;
 	padding-bottom:50px;
 	width:70%;
-	height:800px;
+	height:100%;
 	background-color:#B4CAD2;
 	color:#FFF;
 	font-size:40px;
@@ -41,7 +41,7 @@ p {
 .input {
 	 
 	 border: none;
-	 padding: 10px 0px;
+	 padding: 11px 0px;
 	 background-color:#dcdcdc;
 }
 
@@ -50,16 +50,35 @@ p {
     background-color: #C14925;
     border: none;
     color: white;
-    padding: 10px 334px;
+
     text-align: center;
     font-size: 16px;
     cursor: pointer;
+	
 
 }
+
+.buttonenviar {
+	background-color: #4C6974;
+    border: none;
+    color: white;
+	text-align: right;
+	font-size: 16px;
+    cursor: pointer;
+	padding: 10px 50px;
+	
+}
+
 
 .button:hover {
 	
     background-color: #FF4500;
+
+}
+
+.buttonenviar:hover {
+	
+		background-color:#6691A1;
 
 }
 
@@ -91,4 +110,12 @@ p {
 	background-color:#B4CAD2;
 	width:350px;
 	
+}
+
+#enigma {
+	font-size:20px;
+	color:#000;
+	text-align:justify;
+	padding:70px;
+	font-style: italic;
 }
