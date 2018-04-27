@@ -1,3 +1,7 @@
+*{
+	font-family: Montserrat;
+}
+
 header {
 	height:240px;
 	width:100%;
@@ -5,7 +9,6 @@ header {
 	font-size:102px;
 	color:#FFF;
 	padding-top:30px;
-	font-family: Montserrat;
 	text-align: center;
 }
 
@@ -21,7 +24,36 @@ body {
 	height:100%;
 	background-color:#B4CAD2;
 	color:#FFF;
-	font-size:60px;
+	font-size:40px;
 	text-align:center;
-	font-family: Montserrat;
+}
+
+p {
+	
+	font-size:20px;
+	color:#000;
+	text-align:left;
+	margin-left:100px;
+}
+
+.input {
+	 
+	 border: none;
+	 padding: 10px 0px;
+	 background-color:#dcdcdc;
+}
+
+.button {
+    background-color: #C14925;
+    border: none;
+    color: white;
+    padding: 10px 332px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    background-color: #FF4500;
 }
