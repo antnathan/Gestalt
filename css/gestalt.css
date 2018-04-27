@@ -16,26 +16,26 @@ body {
 	background-color:#A4BEC8;
 }
 
-#caixa {
-	margin-top:-50px;
-	padding-top:30px;
-	margin-left:15%;
-	padding-bottom:50px;
-	width:70%;
-	height:200%;
-	background-color:#B4CAD2;
-	color:#FFF;
-	font-size:40px;
-	text-align:center;
-	box-shadow: black 0px 0px 20px;
-}
-
 p {
 	
 	font-size:20px;
 	color:#000;
 	text-align:left;
 	margin-left:11%;
+}
+
+#caixa {
+	margin-top:-50px;
+	padding-top:30px;
+	margin-left:15%;
+	padding-bottom:50px;
+	width:70%;
+	height:800px;
+	background-color:#B4CAD2;
+	color:#FFF;
+	font-size:40px;
+	text-align:center;
+	box-shadow: black 0px 0px 20px;
 }
 
 .input {
@@ -46,6 +46,7 @@ p {
 }
 
 .button {
+	
     background-color: #C14925;
     border: none;
     color: white;
@@ -57,5 +58,37 @@ p {
 }
 
 .button:hover {
+	
     background-color: #FF4500;
+
+}
+
+.opcoes {
+	
+	width:300px;
+	height:300px;
+	background-color: #4C6974;
+	margin-top:50px;
+	font-size:50px;	
+	
+}
+
+#opcao1,#opcao3 {
+	margin-left:135px;
+	text-align:down;
+}
+
+#opcao2,#opcao4 {
+	margin-left:500px;
+	margin-top:-300px;
+}
+
+#gestalt {
+	font-size:80px;
+	padding:10px 0 10px 0;
+	font-weight:600;
+	margin:-380px 0 0 300px;
+	background-color:#B4CAD2;
+	width:350px;
+	
 }
