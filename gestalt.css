@@ -1,0 +1,27 @@
+header {
+	height:240px;
+	width:100%;
+	background-color:#0C1036;
+	font-size:102px;
+	color:#FFF;
+	padding-top:30px;
+	font-family: Montserrat;
+	text-align: center;
+}
+
+body {
+	background-color:#A4BEC8;
+}
+
+#caixa {
+	margin-top:-50px;
+	padding-top:30px;
+	margin-left:15%;
+	width:70%;
+	height:100%;
+	background-color:#B4CAD2;
+	color:#FFF;
+	font-size:60px;
+	text-align:center;
+	font-family: Montserrat;
+}
