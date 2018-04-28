@@ -16,6 +16,11 @@ window.onload = function(){
 	var span1 = document.getElementsByClassName("close")[1];
 	var span2 = document.getElementsByClassName("close")[2];
 	var span3 = document.getElementsByClassName("close")[3];
+	//Pegando as referencias dos botões "Agora não" que fecharão os pop ups
+	var btnSairPopUp0 = document.getElementsByClassName("sair_popup")[0];
+	var btnSairPopUp1 = document.getElementsByClassName("sair_popup")[1];
+	var btnSairPopUp2 = document.getElementsByClassName("sair_popup")[2];
+	var btnSairPopUp3 = document.getElementsByClassName("sair_popup")[3];
 
 	//Funções que mostram os pop ups
 	btnPalitos.onclick = function() {
@@ -42,6 +47,20 @@ window.onload = function(){
 	    popupVideos.style.display = "none";
 	}
 	span3.onclick = function() {
+	    popupJogos.style.display = "none";
+	}
+
+	//Quando o usuario clica em Agora não, fecha o pop up
+	btnSairPopUp0.onclick = function() {
+	    popupPalitos.style.display = "none";
+	}
+	btnSairPopUp1.onclick = function() {
+	    popupEnigmas.style.display = "none";
+	}
+	btnSairPopUp2.onclick = function() {
+	    popupVideos.style.display = "none";
+	}
+	btnSairPopUp3.onclick = function() {
 	    popupJogos.style.display = "none";
 	}
 
