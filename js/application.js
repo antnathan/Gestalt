@@ -1,5 +1,5 @@
 window.onload = function(){ 
-    //Pegando as referencisa pros pop ups
+    //Pegando as referencias pros pop ups
 	var popupPalitos = document.getElementById('popup_opcao1');
 	var popupEnigmas = document.getElementById('popup_opcao2');
 	var popupVideos = document.getElementById('popup_opcao3');
@@ -22,6 +22,12 @@ window.onload = function(){
 	var btnSairPopUp2 = document.getElementsByClassName("sair_popup")[2];
 	var btnSairPopUp3 = document.getElementsByClassName("sair_popup")[3];
 
+	//Pegando as referêcnias para alterar as fases
+	var btnIrPalitos = document.getElementById("fasePalitos");
+	var btnIrEnigmas = document.getElementById("faseEnigmas");
+	var btnIrVideos = document.getElementById("faseVideos");
+	var btnIrJogos = document.getElementById("faseJogos");
+
 	//Funções que mostram os pop ups
 	btnPalitos.onclick = function() {
 	    popupPalitos.style.display = "block";
@@ -34,6 +40,20 @@ window.onload = function(){
 	}
 	btnJogos.onclick = function() {
 	    popupJogos.style.display = "block";
+	}
+
+	//Funções que alteram as fases
+	btnIrPalitos.onclick = function () {
+		location.href = "telapalitos.html"
+	}
+	btnIrEnigmas.onclick = function () {
+		location.href = "telaenigma.html"
+	}
+	btnIrVideos.onclick = function () {
+		location.href = "telavideo.html"
+	}
+	btnIrJogos.onclick = function () {
+		location.href = "telajogo.html"
 	}
 
 	//Quando o usuario clica em X, fecha o pop up

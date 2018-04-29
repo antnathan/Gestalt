@@ -9,10 +9,9 @@
 
 
 	<body>
-		<header>Enigma</header>
-			<div id="caixa"> 
-			
-					<canvas id="myCanvas" width="800" height="300" style="border:3px solid #FFF;"></canvas>
+		<header id="header_enigmas">Enigma</header>
+			<div class="fase" style="text-align: center"> 
+					<img class="img_fase" src="images/Cachorro de palitos.png"> 			
 			
 					<div id="enunciado">Leia atentamente o enigma acima. A resposta desse enigma levará a um local do prédio, 
 					onde se encontra um cartaz que expressa um ou mais lei(s) da Gestalt. 
@@ -20,17 +19,17 @@
 					Insira no espaço abaixo e justifique como ela se relaciona com a imagem do cartaz.
 					</div>	
 					
-					<input  class="input" type="text" placeholder=" Digite aqui a(s) lei(s) da Gestalt no cartaz" name="leigestalt" size="110" />
-				    <br>
-					<input  class="input" type="text" placeholder=" Digite aqui o local onde estava o cartaz" name="local" size="110" />
-					<br><input  class="input" type="text" placeholder=" nomedoarquivo.jpeg" name="foto" size="73" /><button class="button" type="button" style="padding: 10px 50px;">Escolha um arquivo</button>
-					<br><br>
-					<input  class="input" type="text" placeholder="  Digite seu texto aqui" name="reflexao" style="height:200px; width:800px;" />
-					<br><button class="buttonenviar" type="button">Enviar</button>
-			</div>
-		
-		
-		
+					<input class="input_enigma" type="text" placeholder=" Digite aqui a(s) lei(s) da Gestalt no cartaz" name="leigestalt"/>
+					<br>
+					<input class="input_enigma" type="text" placeholder=" Digite aqui o local onde estava o cartaz" name="local"/>
+					<div id ="enviar_img">
+						<button id = "enigma_botao" class="button" type="button">Escolha um arquivo</button>
+						<input id = "enigma_fotonome" class="input_enigma" type="text" placeholder=" nomedoarquivo.jpeg" name="foto"/>
+					</div>
+					<input  class="input_enigma" type="text" placeholder="  Digite seu texto aqui" name="reflexao"/>	
+					<button class="botao" type="button">Enviar</button>
+					<br>
+			</div>		
 	</body>
 
 </html>

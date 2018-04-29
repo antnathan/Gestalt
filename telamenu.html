@@ -10,10 +10,12 @@
 
 	<body>
 		
-		<header>Menu <input type="image" src="images/Informação.png" style="margin:-20px 140px 100px 1000px; width:50px;"/> </header>
-		
+		<header>WebGest</header>
+			<div id="info">
+				<p>O objetivo dessa atividade é resolver as 4 fases propostas e relacioná-los com os conceitos da Teoria Gestalt ao fim de cada uma delas. As equipes devem trabalhar em paralelo para resolver cada fase. Caso uma atividade seja iniciada, ela deve ser concluída</p>
+			</div>
 			<div id="caixa"> 
-					Selecione a fase:
+					Selecione a Fase:
 					
 					<!-- Caixas de diálogo -->
 					<div id="popup_opcao1" class="popup">
@@ -23,10 +25,10 @@
 					    	<span class="close">&times;</span>
 					    	<h3>Palitos</h3>
 						</div>
-					    <img src="images/CachorrodePalitos.png">
+					    <img class="popup_img" src="images/Cachorro de palitos.png">
 					    <p class="info_fase">Organize os palitos de uma forma que cumpra o desafio proposto</p>
 					    <button class="sair_popup">Agora não</button>
-					    <button>Vamos lá</button>
+					    <button class="botao" id="fasePalitos" hr>Vamos lá</button>
 					  </div>
 					</div>
 					<div id="popup_opcao2" class="popup">
@@ -36,10 +38,10 @@
 					    	<span class="close">&times;</span>
 					    	<h3>Enigmas</h3>
 						</div>
-					    <img src="images/CachorrodePalitos.png">
+					    <img class="popup_img" src="images/Cachorro de palitos.png">
 					    <p class="info_fase">Organize os palitos de uma forma que cumpra o desafio proposto</p>
 					    <button class="sair_popup">Agora não</button>
-					    <button>Vamos lá</button>
+					    <button class="botao" id="faseEnigmas" h>Vamos lá</button>
 					  </div>
 					</div>
 					<div id="popup_opcao3" class="popup">
@@ -49,10 +51,10 @@
 					    	<span class="close">&times;</span>
 					    	<h3>Videos</h3>
 						</div>
-					    <img src="images/CachorrodePalitos.png">
+					    <img class="popup_img" src="images/Vídeo.png">
 					    <p class="info_fase">Organize os palitos de uma forma que cumpra o desafio proposto</p>
 					    <button class="sair_popup">Agora não</button>
-					    <button>Vamos lá</button>
+					    <button class="botao" id="faseVideos" >Vamos lá</button>
 					  </div>
 					</div>
 					<div id="popup_opcao4" class="popup">
@@ -62,33 +64,24 @@
 					    	<span class="close">&times;</span>
 					    	<h3>Jogos</h3>
 						</div>
-					    <img src="images/CachorrodePalitos.png">
+					    <img class="popup_img" src="images/Jogo.png" width="90%">
 					    <p class="info_fase">Organize os palitos de uma forma que cumpra o desafio proposto</p>
 					    <button class="sair_popup">Agora não</button>
-					    <button>Vamos lá</button>
+					    <button class="botao" id="faseJogos">Vamos lá</button>
 					  </div>
 					</div>
-
-					<div id="opcao1" class="opcoes"> 
-						<center><img src="images/Palitos.png" style="margin:20px 0 0 20px;">
-						<br>
-						Palitos</div> 
-					
-					<div id="opcao2" class="opcoes"> 
-						<img src="images/Interrogação.png" style="margin:20px 0 0 20px;">
-					Enigma </div>
-					
-					<div id="opcao3" class="opcoes">
-						<br>Vídeos <img src="images/play.png" style="margin:30px 0 0 20px;"> 
+					<div id ="opcoes">
+						<div id="op12">
+							<div id="opcao1" class="opcoes"> Palitos</div> 
+							<div id="opcao2" class="opcoes">Enigma </div>
 						</div>
-					
-					<div id="opcao4" class="opcoes"> 
-						<br> Jogo <br><img src="images/Controle.png" style="margin:0 0 0 20px;"> 
-						</div>
-					
-						<div id="gestalt"> Gestalt </div>
 						
-					</center>
+						<div id="op34">
+							<div id="opcao3" class="opcoes">Vídeos</div>
+							<div id="opcao4" class="opcoes">Jogo</div>
+						</div>
+						<div id="gestalt"> Gestalt </div>
+					</div>
 			</div>		
 	</body>
 

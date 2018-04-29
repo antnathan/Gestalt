@@ -1,48 +1,39 @@
 *{
 	font-family: Montserrat;
+	font-weight:500;
 }
 
 header {
-	height:240px;
-	width:100%;
-	background-color:#0C1036;
-	font-size:102px;
+	background-color:#0B3142;
+	font-size:60px;
+	padding: 1% 0%;
 	color:#FFF;
-	padding-top:30px;
 	text-align: center;
+	
 }
 
 body {
-	background-color:#A4BEC8;
+	background-color:#fff;
 }
 
 p {
-	
-	font-size:20px;
+	font-size:18px;
 	color:#000;
-	text-align:left;
-	margin-left:11%;
+	text-align: center;
+	margin: 0;
+}
+#info {
+	padding: 2% 10%;
+	background-color: #F5F5F5;
+
 }
 
 #caixa {
-	margin-top:-50px;
-	padding-top:30px;
-	margin-left:15%;
-	padding-bottom:50px;
-	width:70%;
-	height:1100px;
-	background-color:#B4CAD2;
-	color:#FFF;
-	font-size:40px;
+	margin: 2% 25%;
+	background-color:#fff;
+	color:#000;
+	font-size:30px;
 	text-align:center;
-	box-shadow: black 0px 0px 20px;
-}
-
-.input {
-	 
-	 border: none;
-	 padding: 11px 0px;
-	 background-color:#dcdcdc;
 }
 
 .button {
@@ -82,43 +73,57 @@ p {
 
 }
 
-.opcoes {
-	
-	width:300px;
-	height:300px;
-	background-color: #4C6974;
-	margin-top:50px;
+.opcoes {	
+	height:100px;
 	font-size:50px;
-	cursor: pointer;	
-	
+	color: #fff;
+	cursor: pointer;
 }
 
-#opcao1,#opcao3 {
-	margin-left:135px;
-	text-align:down;
+#opcao1, #opcao2, #opcao3,#opcao4 {
+	display: inline-block;
+	width: 35%;
+	height: 100%;
+	padding: 10px;
+}
+#opcao1, #opcao2 {
+	padding-bottom: 40px;
+}
+#opcao3, #opcao4 {
+	padding-top: 40px;
+}
+#opcao1 {
+	background-color: #FFFF66;
 }
 
-#opcao2,#opcao4 {
-	margin-left:500px;
-	margin-top:-300px;
+#opcao2 {
+	background-color: #CC3333;
+}
+#opcao3 {
+	background-color: #339966;	
+}
+#opcao4 {
+	background-color: #0066CC;	
+}
+#op12 {
+	position: relative;
+	top:35px;
+}
+#op34 {
+	position: relative;
+	top:70px;
 }
 
-#gestalt {
-	font-size:80px;
-	padding:10px 0 10px 0;
-	font-weight:600;
-	margin:-380px 0 0 300px;
-	background-color:#B4CAD2;
-	width:350px;
-	
-}
-
-#enunciado {
-	font-size:20px;
+#gestalt {	
+	font-size:70px;
+	font-weight:bold;
+	background-color:#fff;
+	text-align: center;
+	padding: 2%;
+	display: inline-block;
+	position: relative;
+	bottom: 110px;
 	color:#000;
-	text-align:justify;
-	padding:70px;
-	font-style: italic;
 }
 
 /*Caixa de Diálogo*/
@@ -141,14 +146,15 @@ p {
     margin: 2% auto; /* 15% from the top and centered */
     /*padding: 20px;*/
     border: 1px solid #888;
-    width: 70%; /* Could be more or less, depending on screen size */
-    background-color: #B4CAD2;
+    width: 50%; /* Could be more or less, depending on screen size */
+    background-color: #fff;
     color: #000;
 }
 
 .info_fase {
 	text-align: center;
 	margin: 2% auto;
+	width: 100%;
 }
 
 /* Botão que fecha */
@@ -160,14 +166,13 @@ p {
     padding: 0.5% 2%;
 }
 header_popup {
-	display: inline-flex;
+	background-color: #FFFF66;
 }
 
 h3 {
-	margin: 0% 0% 2% 5%;/*isso vai centralizar o titulo na tela*/
+	margin: 0;
 	color: #fff;
-	background-color: #000;
-	display: inline-block;
+	background-color: #FFFF66;
 	padding: 0% 5% 2% 5%;
 }
 .close:hover,
@@ -176,17 +181,92 @@ h3 {
     text-decoration: none;
     cursor: pointer;
 }
+
+.popup_img {
+	margin: 3% 0%;
+}
+
 button {
 	cursor: pointer;
 }
-.popup_content button {
-	margin: 2% auto;
-	background-color: #4C6974;
+.botao {
+	background-color: #C14925;
 	color: #fff;
-	padding: 2%;
+	padding: 1.5%;
 	font-size: 20px;
 	border-style: none;
+	font-style:italic; 
 }
-.popup_content button:hover {
-	background-color: #6691A1;
+
+.popup_content .botao {
+	margin: 3%;
+}
+
+.sair_popup {
+	margin: 3%;
+	background-color: #fff;
+	color: #C14925;
+	padding: 2%;
+	font-size: 20px;
+	font-style:italic; 
+	border-style: none;
+}
+.sair_popup:hover {
+	text-decoration: underline;
+}
+
+.fase {
+	margin: 2% 20%;,
+	text-align: center;
+}
+.input {
+	width: 100%;
+	height: 200px;
+}
+#enunciado {
+	margin: 2% 0;
+	font-size:16px;
+	color:#000;
+	text-align:justify;
+	font-style: italic;
+}
+
+#header_palitos {
+	background-color: #FFFF66;
+}
+#header_enigmas {
+	background-color: #CC3333;
+}
+#header_videos {
+	background-color: #339966;
+}
+#header_jogos {
+	background-color:  #0066CC;
+}
+
+.img_fase {
+	margin: 3% 0;
+}
+
+.fase .botao {
+	margin: 1% 0;
+	padding: 1.5% 4%;
+}
+.input_enigma {
+	width: 100%;
+	padding: 1%;
+	margin: 1% 0%;
+}
+
+#enviar_img {
+	display: inline-block;
+	width: 103%;
+}
+#enigma_botao {
+	width: 38%;
+	padding: 1%;
+}
+#enigma_fotonome {
+	width: 58.5%;
+	padding: 1%;
 }
