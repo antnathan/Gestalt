@@ -4,7 +4,7 @@
 	<meta charset = " UTF-8 ">
 	<title> Caça Gestalt </title>
 	<link rel="stylesheet" type="text/css" href="css/gestalt.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<script src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/application.js"></script>
 </head>
 
@@ -12,7 +12,7 @@
 		
 		<header>WebGest</header>
 			<div id="info">
-				<p>O objetivo dessa atividade é resolver as 4 fases propostas e relacioná-los com os conceitos da Teoria Gestalt ao fim de cada uma delas. As equipes devem trabalhar em paralelo para resolver cada fase. Caso uma atividade seja iniciada, ela deve ser concluída</p>
+				O objetivo dessa atividade é resolver as 4 fases propostas e relacioná-los com os conceitos da Teoria Gestalt ao fim de cada uma delas. As equipes devem trabalhar em paralelo para resolver cada fase. Caso uma atividade seja iniciada, ela deve ser concluída
 			</div>
 			<div id="caixa"> 
 					Selecione a Fase:
@@ -21,64 +21,64 @@
 					<div id="popup_opcao1" class="popup">
 					  <!-- Conteúdo caixa de diálogo -->
 					  <div class="popup_content">
-					    <div class="header_popup">
+					    <div class="amarelo">
 					    	<span class="close">&times;</span>
 					    	<h3>Palitos</h3>
 						</div>
 					    <img class="popup_img" src="images/Cachorro de palitos.png">
 					    <p class="info_fase">Organize os palitos de uma forma que cumpra o desafio proposto</p>
 					    <button class="sair_popup">Agora não</button>
-					    <button class="botao" id="fasePalitos" hr>Vamos lá</button>
+					    <button class="botao" toLocation="telapalitos">Vamos lá</button>
 					  </div>
 					</div>
 					<div id="popup_opcao2" class="popup">
-					  <!-- Conteúdo caixa de diálogo -->
+					 <!-- Conteúdo caixa de diálogo -->
 					  <div class="popup_content">
-					    <div class="header_popup">
+					    <div class="vermelho">
 					    	<span class="close">&times;</span>
 					    	<h3>Enigmas</h3>
 						</div>
 					    <img class="popup_img" src="images/Cachorro de palitos.png">
 					    <p class="info_fase">Organize os palitos de uma forma que cumpra o desafio proposto</p>
 					    <button class="sair_popup">Agora não</button>
-					    <button class="botao" id="faseEnigmas" h>Vamos lá</button>
+					    <button class="botao" toLocation="telaenigma" >Vamos lá</button>
 					  </div>
 					</div>
 					<div id="popup_opcao3" class="popup">
 					  <!-- Conteúdo caixa de diálogo -->
 					  <div class="popup_content">
-					    <div class="header_popup">
+					    <div class="verde">
 					    	<span class="close">&times;</span>
 					    	<h3>Videos</h3>
 						</div>
 					    <img class="popup_img" src="images/Vídeo.png">
 					    <p class="info_fase">Organize os palitos de uma forma que cumpra o desafio proposto</p>
 					    <button class="sair_popup">Agora não</button>
-					    <button class="botao" id="faseVideos" >Vamos lá</button>
+					    <button class="botao" toLocation="telavideo" >Vamos lá</button>
 					  </div>
 					</div>
 					<div id="popup_opcao4" class="popup">
 					  <!-- Conteúdo caixa de diálogo -->
 					  <div class="popup_content">
-					    <div class="header_popup">
+					    <div class="azul">
 					    	<span class="close">&times;</span>
 					    	<h3>Jogos</h3>
 						</div>
 					    <img class="popup_img" src="images/Jogo.png" width="90%">
 					    <p class="info_fase">Organize os palitos de uma forma que cumpra o desafio proposto</p>
 					    <button class="sair_popup">Agora não</button>
-					    <button class="botao" id="faseJogos">Vamos lá</button>
+					    <button class="botao" toLocation="telajogo">Vamos lá</button>
 					  </div>
 					</div>
 					<div id ="opcoes">
 						<div id="op12">
-							<div id="opcao1" class="opcoes"> Palitos</div> 
-							<div id="opcao2" class="opcoes">Enigma </div>
+							<div id="opcao1" class="opcoes amarelo">Palitos</div> 
+							<div id="opcao2" class="opcoes vermelho">Enigma </div>
 						</div>
 						
 						<div id="op34">
-							<div id="opcao3" class="opcoes">Vídeos</div>
-							<div id="opcao4" class="opcoes">Jogo</div>
+							<div id="opcao3" class="opcoes verde">Vídeos</div>
+							<div id="opcao4" class="opcoes azul">Jogo</div>
 						</div>
 						<div id="gestalt"> Gestalt </div>
 					</div>

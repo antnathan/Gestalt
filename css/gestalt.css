@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,700i');
+
 *{
 	font-family: Montserrat;
 	font-weight:500;
@@ -9,44 +11,62 @@ header {
 	padding: 1% 0%;
 	color:#FFF;
 	text-align: center;
-	
 }
 
 body {
-	background-color:#fff;
+	margin: 0;
+	background-color:#FFFFFF;
 }
 
 p {
 	font-size:18px;
 	color:#000;
-	text-align: center;
-	margin: 0;
+	text-align: left;
+	margin: 3% 15%;
+	width: 70%;
 }
-#info {
-	padding: 2% 10%;
-	background-color: #F5F5F5;
 
+#info {
+	padding: 1% 20%;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.5em;
+	background-color: #F5F5F5;
 }
 
 #caixa {
-	margin: 2% 25%;
-	background-color:#fff;
+	padding-top:30px;
+	margin: 0 15%;
+	width:70%;
+	height:auto;
 	color:#000;
-	font-size:30px;
+	font-size:40px;
+	font-weight: 400;
 	text-align:center;
 }
 
-.button {
-	
+
+.input {
+	 width: 96%;
+	 border: none;
+	 padding: 2%;
+	 background-color:#dcdcdc;
+}
+
+textarea{
+	resize: none;
+}
+
+.button {	
+	width: 70%;
+	margin: 0 15%;
     background-color: #C14925;
     border: none;
     color: white;
-
+    padding: 10px 0;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-	
-
 }
 
 .buttonenviar {
@@ -56,21 +76,16 @@ p {
 	text-align: right;
 	font-size: 16px;
     cursor: pointer;
-	padding: 10px 50px;
-	
+	padding: 10px 50px;	
 }
 
 
-.button:hover {
-	
+.button:hover {	
     background-color: #FF4500;
-
 }
 
 .buttonenviar:hover {
-	
-		background-color:#6691A1;
-
+	background-color:#6691A1;
 }
 
 .opcoes {	
@@ -92,19 +107,22 @@ p {
 #opcao3, #opcao4 {
 	padding-top: 40px;
 }
-#opcao1 {
-	background-color: #FFFF66;
+.amarelo {
+	background-color: #FEE016;
 }
 
-#opcao2 {
+.vermelho {
 	background-color: #CC3333;
 }
-#opcao3 {
+
+.verde {
 	background-color: #339966;	
 }
-#opcao4 {
+
+.azul {
 	background-color: #0066CC;	
 }
+
 #op12 {
 	position: relative;
 	top:35px;
@@ -165,16 +183,13 @@ p {
     font-weight: bold;
     padding: 0.5% 2%;
 }
-header_popup {
-	background-color: #FFFF66;
-}
 
 h3 {
 	margin: 0;
 	color: #fff;
-	background-color: #FFFF66;
 	padding: 0% 5% 2% 5%;
 }
+
 .close:hover,
 .close:focus {
     color: black;
@@ -219,29 +234,13 @@ button {
 	margin: 2% 20%;,
 	text-align: center;
 }
-.input {
-	width: 100%;
-	height: 200px;
-}
+
 #enunciado {
 	margin: 2% 0;
 	font-size:16px;
 	color:#000;
 	text-align:justify;
 	font-style: italic;
-}
-
-#header_palitos {
-	background-color: #FFFF66;
-}
-#header_enigmas {
-	background-color: #CC3333;
-}
-#header_videos {
-	background-color: #339966;
-}
-#header_jogos {
-	background-color:  #0066CC;
 }
 
 .img_fase {
