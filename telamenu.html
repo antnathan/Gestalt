@@ -8,20 +8,19 @@
 	<script type="text/javascript" src="js/application.js"></script>
 </head>
 
-	<body>
+	<body onload="fadeoutBtts()">
 		
-		<header>WebGest</header>
+		<header class="noSelect">WebGest</header>
 			<div id="info">
-				O objetivo dessa atividade é resolver as 4 fases propostas e relacioná-los com os conceitos da Teoria Gestalt ao fim de cada uma delas. As equipes devem trabalhar em paralelo para resolver cada fase. Caso uma atividade seja iniciada, ela deve ser concluída
+				O objetivo dessa atividade é resolver as 4 fases propostas e relacioná-los com os conceitos da Teoria Gestalt ao fim de cada uma delas.
+				As equipes devem trabalhar em paralelo para resolver cada fase. Caso uma atividade seja iniciada, ela deve ser concluída
 			</div>
-			<div id="caixa"> 
-					Selecione a Fase:
-					
+			<div id="caixa"> Selecione a Fase:					
 					<!-- Caixas de diálogo -->
 					<div id="popup_opcao1" class="popup">
 					  <!-- Conteúdo caixa de diálogo -->
 					  <div class="popup_content">
-					    <div class="amarelo">
+					    <div class="amarelo noSelect">
 					    	<span class="close">&times;</span>
 					    	<h3>Palitos</h3>
 						</div>
@@ -34,25 +33,25 @@
 					<div id="popup_opcao2" class="popup">
 					 <!-- Conteúdo caixa de diálogo -->
 					  <div class="popup_content">
-					    <div class="vermelho">
+					    <div class="vermelho noSelect">
 					    	<span class="close">&times;</span>
 					    	<h3>Enigmas</h3>
 						</div>
-					    <img class="popup_img" src="images/Cachorro de palitos.png">
-					    <p class="info_fase">Organize os palitos de uma forma que cumpra o desafio proposto</p>
+					    <div class="enigma"><em>"Se você desvendar o que sou, saberá onde estou"</em></div>
+					    <p class="info_fase">Através do enigma que será mostrado, encontre o local do cartaz escondido no bloco do SMD e analise-o</p>
 					    <button class="sair_popup">Agora não</button>
-					    <button class="botao" toLocation="telaenigma" >Vamos lá</button>
+					    <button class="botao" id="telaenigma">Vamos lá</button>
 					  </div>
 					</div>
 					<div id="popup_opcao3" class="popup">
 					  <!-- Conteúdo caixa de diálogo -->
 					  <div class="popup_content">
-					    <div class="verde">
+					    <div class="verde noSelect">
 					    	<span class="close">&times;</span>
 					    	<h3>Videos</h3>
 						</div>
 					    <img class="popup_img" src="images/Vídeo.png">
-					    <p class="info_fase">Organize os palitos de uma forma que cumpra o desafio proposto</p>
+					    <p class="info_fase">Assista o vídeo e identifique elementos da teoria Gestalt</p>
 					    <button class="sair_popup">Agora não</button>
 					    <button class="botao" toLocation="telavideo" >Vamos lá</button>
 					  </div>
@@ -60,27 +59,25 @@
 					<div id="popup_opcao4" class="popup">
 					  <!-- Conteúdo caixa de diálogo -->
 					  <div class="popup_content">
-					    <div class="azul">
+					    <div class="azul noSelect">
 					    	<span class="close">&times;</span>
 					    	<h3>Jogos</h3>
 						</div>
 					    <img class="popup_img" src="images/Jogo.png" width="90%">
-					    <p class="info_fase">Organize os palitos de uma forma que cumpra o desafio proposto</p>
+					    <p class="info_fase">Instale e interaja com o jogo no seu computador e, em equipe, analise-o do ponto de vista da Gestalt</p>
 					    <button class="sair_popup">Agora não</button>
 					    <button class="botao" toLocation="telajogo">Vamos lá</button>
 					  </div>
 					</div>
-					<div id ="opcoes">
-						<div id="op12">
-							<div id="opcao1" class="opcoes amarelo">Palitos</div> 
-							<div id="opcao2" class="opcoes vermelho">Enigma </div>
-						</div>
-						
-						<div id="op34">
-							<div id="opcao3" class="opcoes verde">Vídeos</div>
-							<div id="opcao4" class="opcoes azul">Jogo</div>
-						</div>
+					<div id="center">
 						<div id="gestalt"> Gestalt </div>
+						<div id="opcoes">
+								<div id="opcao1" class="opcoes amarelo noSelect">Palitos</div> 
+								<div id="opcao2" class="opcoes vermelho noSelect">Enigma </div>						
+								<div id="opcao3" class="opcoes verde noSelect">Vídeos</div>
+								<div id="opcao4" class="opcoes azul noSelect">Jogo</div>								
+						</div>
+					</div>
 					</div>
 			</div>		
 	</body>

@@ -5,23 +5,26 @@
 	<title> Caça Gestalt </title>
 	<link rel="stylesheet" type="text/css" href="css/gestalt.css">
 	<script src="js/jquery.js"></script>
+	<script src="js/valores.js"></script>
 	<script src="js/application.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 
 
-	<body>
-		<header class="azul">Jogo</header>
+	<body onload="sorteioJogo()">
+		<header class="azul noSelect">Jogo</header>
 			<div class="fase" style="text-align: center"> 
 					
 					<img class="img_fase" src="images/Jogo.png">
-					<br>Link para o jogo
+					<br/>
+					<a target="_blank" id="jogoEscolhido" href="">Link para o jogo</a>				
 					<br>
 					<div id="enunciado"> Nesta fase a equipe deve analisar o game acima e relacioná-lo com os conceitos principais da teoria da Gestalt. Em seguida, indique um jogo que expresse esses conceitos. 
 					</div>	
+					<form action="" method="" id="salvarJogoForm" toLocation="telamenu" accept-charset="utf-8">
+						<textarea class="input" type="text" id="reflexao" name="reflexao" rows="6" maxlength="1500" minlength="500" required>O que percebemos...</textarea>
+						<br><input class="botao" type="submit"/>
+					</form>
 					
-	
-					<input  class="input" type="text" placeholder="  Digite seu texto aqui" name="reflexao"/>
-					<br><button class="botao" toLocation="telamenu" type="button">Enviar</button>
 			</div>
 		
 		

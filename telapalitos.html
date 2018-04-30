@@ -9,14 +9,19 @@
 </head>
 
 
-	<body>
-		<header class="amarelo">Palitos</header>
+	<body onload="sorteioPalitos();">
+		<header class="amarelo noSelect">Palitos</header>
 			<div class="fase" style="text-align: center">
-			<img class="img_fase" src="images/Cachorro de palitos.png"> 			
-					<div id="enunciado"> Descreva qual o processo usado para resolver os desafios. Como esse processo se relaciona com as ideias da Gestalt sobre a resolução de problemas?
+			<object data="files/jogo_palitos_mod.swf" width="590" height="450">
+				<param name="autoStart" value="0">
+			</object> 			
+					<div id="enunciado">Neste desafio vocês devem resolver o desafio <span id="x">X</span> da malha triangular e o desafio <span id="y">Y</span> da malha quadrada. Descreva então qual o processo usado para resolver os desafios. Como esse processo se relaciona com as ideias da Gestalt sobre a resolução de problemas?
 					</div>		
-					<textarea class="input" type="text" placeholder="Digite seu texto aqui" name="reflexao" rows="6"/></textarea>
-					<button class="botao" toLocation="telamenu" type="button">Enviar</button>
+					<form action="" method="" toLocation="telamenu" id="salvarPalitosForm" accept-charset="utf-8">
+						<textarea class="input" type="text" id="reflexao" name="reflexao" rows="6" maxlength="1500" minlength="500" required>O que percebemos...</textarea>
+						<input class="botao" type="submit"/>
+					</form>
+					
 			</div>
 		
 		

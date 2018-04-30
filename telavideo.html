@@ -5,23 +5,25 @@
 	<title> Caça Gestalt </title>
 	<link rel="stylesheet" type="text/css" href="css/gestalt.css">
 	<script src="js/jquery.js"></script>
+	<script src="js/valores.js"></script>
 	<script src="js/application.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 
 
-	<body>
-		<header class="verde">Vídeo</header>
+	<body onload="sorteioVideo();">
+		<header class="verde noSelect">Vídeo</header>
 			<div class="fase" style="text-align: center"> 
 			
 					<img class="img_fase" src="images/Vídeo.png">
-			
+					<br/>
+					<a target="_blank" id="videoEscolhido" href="">Link para o vídeo</a>	
 					<div id="enunciado">Nesta fase a equipe deve analisar a mídia acima e relacioná-la com os conceitos principais da teoria da Gestalt. Em seguida, indique um vídeo que expresse esses conceitos. 
 					</div>		
-					<input  class="input" type="text" placeholder="  Digite seu texto aqui" name="reflexao"/>
-					<br><button class="botao" toLocation="telamenu" type="button">Enviar</button>
-			</div>
-		
-		
+					<form action="" method="" id="salvarVideoForm" toLocation="telamenu" accept-charset="utf-8">
+						<textarea class="input" type="text" id="reflexao" name="reflexao" rows="6">O que percebemos...</textarea>
+						<br><input class="botao" type="submit"/>
+					</form>					
+			</div>	
 		
 	</body>
 

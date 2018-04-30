@@ -9,14 +9,17 @@
 
 </head>
 	<body>
-		<header>Gestalt</header>
+		<header class="noSelect">Gestalt</header>
 			<div id="caixa"> 
+				<form action="" method="" id="salvarEquipeForm" toLocation="telamenu" accept-charset="utf-8">
 					Cadastre sua equipe para continuar:	
 					<p> Nome da equipe: <br>
-					<input  class="input" type="text" name="equipe"/> </p>					
+					<input  class="input" type="text" name="equipe" id="equipe" required/> </p>					
 					<p>Integrantes: <br>
-					<textarea name="integrantes" class="input" rows="6"></textarea>  </p>				
-					<button class="button" type="button">Pronto!</button>
+					<textarea name="integrantes" id="integrantes" class="input" rows="6" required></textarea>  </p>				
+					<input type="submit" class="button" id="salvarEquipe">
+				</form>
+					
 			</div>		
 	</body>
 	
